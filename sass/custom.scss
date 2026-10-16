@@ -1,0 +1,89 @@
+body {
+    background-image: url("../media/img2_bg.jpg");
+    background-size: cover;
+}
+
+.img1 {
+    text-align: center;
+    padding: 40px 20px 30px;
+    position: relative;
+    background-image: url("../media/img1_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img1 h1 {
+    font-family: 'MonteCarlo', system-ui;
+    color: white;
+    font-weight: 700;
+    margin: 0;  
+    font-size: clamp(2rem, 6vw, 9rem);
+    padding-right: 50px;
+}
+
+.navbar {
+    font-family: 'Quintessential', system-ui;
+    font-size: 3rem;
+    font-weight: 400;
+    padding: clamp(8px, 1.5vw, 15px) 0;
+}
+
+.navbar .nav-link {
+    color: #D4AF37;
+    margin-inline: 5px;
+    padding: clamp(6px, 1vw, 10px) clamp(10px, 1.5vw, 20px) !important;
+}
+
+.navbar .nav-link:hover {
+    color: #50bed1;
+}
+
+.navbar .nav-link.active {
+    color: #50bed1 !important;
+}
+
+#about .card {
+    margin: 0px auto;
+    width: 50%;
+    font-family: serif;
+    font-size: 1.3rem;
+    background-color: #cdffff;
+    background-image:
+    linear-gradient(rgba(43, 18, 61, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(43, 18, 61, 0.06) 1px, transparent 1px);
+    background-size: 25px 25px;
+}
+
+.card-platillo {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    border: none;
+    border-radius: 1.5rem;
+    overflow: hidden; /* recorta la imagen y el fondo a las esquinas redondeadas */
+    font-family: serif;
+    background-color: #bc79d6;
+    background-image:
+        linear-gradient(rgba(43, 18, 61, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(43, 18, 61, 0.06) 1px, transparent 1px);
+    background-size: 25px 25px;
+}
+
+.card-platillo__img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.card-platillo .card-title {
+    font-family: 'Uncial Antiqua', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
