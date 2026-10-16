@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.8"
+  },
+
+  "scripts": {
+    "build": "purgecss --css sass/custom.css --content index.html pagina1.html pagina2.html pagina3.html --output sass/reducido.css"
   }
 }
